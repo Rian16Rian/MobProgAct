@@ -12,7 +12,7 @@ export const styles = {
     },
     instructions: {
         textAlign: 'center',
-        color: '#333333',
+        color: '#92c3fa',
         marginBottom: 5,
     },
 }

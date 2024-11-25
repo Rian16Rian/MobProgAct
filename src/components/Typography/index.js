@@ -6,7 +6,7 @@ const Typography = ({text, size, isUpperCase, color}) => {
       <Text style={{ 
         fontSize: size ?? 50,
         textTransform: isUpperCase ? 'uppercase' : 'none',
-        color: color ?? 'black',
+        color: color ?? '#0c62ab',
       }}>{text}</Text>
     </View>
   )

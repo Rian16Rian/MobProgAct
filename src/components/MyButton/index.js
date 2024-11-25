@@ -2,7 +2,7 @@ import React from 'react'
 import { View } from 'react-native'
 import {Button} from 'react-native-paper'
 
-const MyButton = ({text, action, mode, size}) => {
+const MyButton = ({text, action, mode, size,}) => {
 
     let style = null
     
@@ -21,12 +21,16 @@ const MyButton = ({text, action, mode, size}) => {
             break;
     }
 
+const buttonColor = '#0e62a3'; 
+const textColor = '#FFFFFF';  
+
   return (
-    <Button contentStyle={style} mode={mode} onPress={() => action()}>
+    <Button contentStyle={style} mode={mode} onPress={() => action()} style={{ backgroundColor: buttonColor }} labelStyle={{ color: textColor }}>
         {text}
     </Button>
   )
 }
+
 
 export default MyButton
 

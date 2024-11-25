@@ -6,10 +6,13 @@ import { useRouter } from 'expo-router'
 const Settings = () => {
   const router = useRouter();
 
+  const buttonColor = '#0e62a3'; 
+  const textColor = '#FFFFFF';   
+
   return (
     <View>
       <Text>Settings</Text>
-      <Button mode="contained" onPress={() => router.replace('/')}>Logout</Button>
+      <Button mode="contained" onPress={() => router.replace('/')} style={{ backgroundColor: buttonColor }} labelStyle={{ color: textColor }}>Logout</Button>
     </View>
   )
 }

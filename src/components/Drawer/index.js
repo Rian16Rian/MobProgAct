@@ -30,13 +30,13 @@ export default function DrawerContent(props) {
                         paddingBottom: 20
                     }}
                 > 
-                    <Image source={require('../../assets/logo.png')} style={{ alignSelf: 'center', height: 150, width: 150 }} /> 
+                    <Image source={require('../../assets/bird.png')} style={{ alignSelf: 'center', height: 100, width: 100, borderRadius: 75 }} /> 
                 </View>
                 <DrawerItemList {...props} />
                 <DrawerItem
                     label="Logout"
                     icon={({ color, size }) => (
-                        <MaterialCommunityIcons name='logout' color={color} size={size} />
+                        <MaterialCommunityIcons name='logout' color='red' size={size} />
                     )}
                     labelStyle={{ marginLeft: 10 }}
                     onPress={handleLogout}
@@ -50,7 +50,7 @@ export default function DrawerContent(props) {
                 }}
             >
                 <Text>
-                    Copyright &copy; {year}. All rights reserved
+                    All rights reserved {year}
                 </Text>
             </View> 
         </View>

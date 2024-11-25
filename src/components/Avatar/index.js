@@ -13,7 +13,7 @@ const Avatar = (props) => {
         }}
     >
         <Image 
-                source={require('../../assets/logo.png')}
+                source={require('../../assets/bird.png')}
                 style={{ 
                     width: '100%',
                     height: '100%',
