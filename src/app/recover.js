@@ -4,7 +4,7 @@ import React from 'react'
 const Recover = () => {
   return (
     <View>
-      <Text>Recover</Text>
+      <Text>In progress...</Text>
     </View>
   )
 }
